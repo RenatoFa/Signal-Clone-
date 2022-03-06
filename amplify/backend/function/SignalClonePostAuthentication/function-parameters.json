@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "SignalClone",
+  "functionName": "SignalClonePostAuthentication",
+  "resourceName": "SignalClonePostAuthentication",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/PostAuthentication",
+  "triggerTemplate": "PostAuthentication.json.ejs",
+  "triggerEventPath": "PostAuthentication.event.json",
+  "roleName": "SignalClonePostAuthentication",
+  "skipEdit": true,
+  "enableCors": false
+}

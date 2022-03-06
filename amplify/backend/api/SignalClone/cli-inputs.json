@@ -3,7 +3,7 @@
   "serviceConfiguration": {
     "apiName": "SignalClone",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-a5c91334-12e1-43b6-9438-d09aaea550e7/amplify/backend/api/SignalClone/schema.graphql",
+    "gqlSchemaPath": "/tmp/amplify-54d844ac-99e3-4997-bcb2-9f148d384526/amplify/backend/api/SignalClone/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
       "keyDescription": "api key description",
