@@ -1,13 +1,20 @@
 import React from "react";
-import { Text, Image, View } from 'react-native'
+import { useNavigation } from "@react-navigation/native";
+import { Text, Image, View, Pressable } from 'react-native'
 
 import styles from './styles'
 
 const ChatRoomItem = ({ chatRoom }) => {
   const user = chatRoom.users[1]
 
+  const navigation = useNavigation()
+
+  const onPress = () => {
+    navigation.navigate('ChatRoom', { id: chatRoom.id })
+  }
+
   return (
-    <View style={styles.container}>
+    <Pressable onPress={onPress} style={styles.container}>
       <Image style={styles.image} source={{ uri: user.imageUri }} />
 
       {chatRoom.newMessages && <View style={styles.badgeContainer}>
@@ -21,7 +28,7 @@ const ChatRoomItem = ({ chatRoom }) => {
         </View>
         <Text numberOfLines={1} ellipsizeMode='tail' style={styles.text}>{chatRoom.lastMessage.content}</Text>
       </View>
-    </View>
+    </Pressable>
   )
 }
 
