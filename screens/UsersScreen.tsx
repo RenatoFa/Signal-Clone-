@@ -2,26 +2,19 @@ import * as React from 'react'
 import { Text, View, StyleSheet, FlatList, Pressable } from 'react-native'
 import { Auth } from 'aws-amplify';
 
-import ChatRoomItem from '../components/ChatRoomItem';
+import UserItem from '../components/UserItem';
 
-import chatRoomsData from '../assets/dummy-data/ChatRooms'
+import Users from '../assets/dummy-data/Users'
 
-export default function TabOneScreen() {
-  const louOut = () => {
-    Auth.signOut()
-  }
-
+export default function UsersScreen() {
   return (
     <View style={styles.page}>
       <FlatList
-        data={chatRoomsData}
-        showsVerticalScrollIndicator={true}
+        data={Users}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) =>
-          <ChatRoomItem chatRoom={item} />}
+          <UserItem user={item} />}
       />
-      {/* <Pressable onPress={louOut} style={styles.button}>
-        <Text>Logout</Text>
-      </Pressable> */}
     </View>
   );
 }

@@ -17,8 +17,8 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
 import ChatRoomHeader from '../components/ChatRoomHeader/ChatRoomHeader';
 import HomeScreen from '../screens/HomeScreen'
+import UsersScreen from '../screens/UsersScreen'
 import HomeHeader from '../components/HomeHeader';
-
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -48,6 +48,13 @@ function RootNavigator() {
         options={{
           headerTitle: ChatRoomHeader,
           headerBackTitleVisible: false
+        }}
+      />
+      <Stack.Screen
+        name="UsersScreen"
+        component={UsersScreen}
+        options={{
+          title: "Users",
         }}
       />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
