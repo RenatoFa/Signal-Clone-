@@ -11,8 +11,6 @@ export default function TabOneScreen() {
     Auth.signOut()
   }
 
-
-
   return (
     <View style={styles.page}>
       <FlatList
