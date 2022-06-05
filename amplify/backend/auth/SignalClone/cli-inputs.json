@@ -82,7 +82,9 @@
     "parentStack": {
       "Ref": "AWS::StackId"
     },
-    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostAuthentication\",\n    \"lambdaFunctionName\": \"SignalClonePostAuthentication\"\n  }\n]",
+    "authTriggerConnections": [
+      "{\"triggerType\":\"PostAuthentication\",\"lambdaFunctionName\":\"SignalClonePostAuthentication\"}"
+    ],
     "permissions": []
   }
 }

@@ -19,9 +19,9 @@ export default function TabOneScreen() {
         renderItem={({ item }) =>
           <ChatRoomItem chatRoom={item} />}
       />
-      {/* <Pressable onPress={louOut} style={styles.button}>
+      <Pressable onPress={louOut} style={styles.button}>
         <Text>Logout</Text>
-      </Pressable> */}
+      </Pressable>
     </View>
   );
 }

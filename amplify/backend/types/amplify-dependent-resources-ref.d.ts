@@ -24,5 +24,11 @@ export type AmplifyDependentResourcesAttributes = {
             "LambdaExecutionRole": "string",
             "Region": "string"
         }
+    },
+    "storage": {
+        "s3signalclonestoragefa4f610a": {
+            "BucketName": "string",
+            "Region": "string"
+        }
     }
 }
